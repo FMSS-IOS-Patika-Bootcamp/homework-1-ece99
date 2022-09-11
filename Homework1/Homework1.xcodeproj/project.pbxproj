@@ -16,6 +16,10 @@
 		37698A5928CDD84400DBD4E5 /* Homework1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37698A5828CDD84400DBD4E5 /* Homework1Tests.swift */; };
 		37698A6328CDD84500DBD4E5 /* Homework1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37698A6228CDD84500DBD4E5 /* Homework1UITests.swift */; };
 		37698A6528CDD84500DBD4E5 /* Homework1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37698A6428CDD84500DBD4E5 /* Homework1UITestsLaunchTests.swift */; };
+		37698A7428CDE08300DBD4E5 /* CoinListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37698A7228CDE08300DBD4E5 /* CoinListCollectionViewCell.swift */; };
+		37698A7528CDE08300DBD4E5 /* CoinListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37698A7328CDE08300DBD4E5 /* CoinListCollectionViewCell.xib */; };
+		37698A7928CDE10D00DBD4E5 /* AddingItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37698A7828CDE10D00DBD4E5 /* AddingItemViewController.swift */; };
+		37698A7C28CDE15F00DBD4E5 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37698A7B28CDE15F00DBD4E5 /* Element.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		37698A5E28CDD84500DBD4E5 /* Homework1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Homework1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37698A6228CDD84500DBD4E5 /* Homework1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework1UITests.swift; sourceTree = "<group>"; };
 		37698A6428CDD84500DBD4E5 /* Homework1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		37698A7228CDE08300DBD4E5 /* CoinListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCollectionViewCell.swift; sourceTree = "<group>"; };
+		37698A7328CDE08300DBD4E5 /* CoinListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinListCollectionViewCell.xib; sourceTree = "<group>"; };
+		37698A7828CDE10D00DBD4E5 /* AddingItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingItemViewController.swift; sourceTree = "<group>"; };
+		37698A7B28CDE15F00DBD4E5 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,11 @@
 		37698A4028CDD84000DBD4E5 /* Homework1 */ = {
 			isa = PBXGroup;
 			children = (
+				37698A7A28CDE14E00DBD4E5 /* Model */,
+				37698A7728CDE0DC00DBD4E5 /* Controller */,
+				37698A7628CDE0BF00DBD4E5 /* Cell */,
 				37698A4128CDD84000DBD4E5 /* AppDelegate.swift */,
 				37698A4328CDD84000DBD4E5 /* SceneDelegate.swift */,
-				37698A4528CDD84000DBD4E5 /* ViewController.swift */,
 				37698A4728CDD84000DBD4E5 /* Main.storyboard */,
 				37698A4A28CDD84400DBD4E5 /* Assets.xcassets */,
 				37698A4C28CDD84400DBD4E5 /* LaunchScreen.storyboard */,
@@ -125,6 +135,32 @@
 				37698A6428CDD84500DBD4E5 /* Homework1UITestsLaunchTests.swift */,
 			);
 			path = Homework1UITests;
+			sourceTree = "<group>";
+		};
+		37698A7628CDE0BF00DBD4E5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				37698A7228CDE08300DBD4E5 /* CoinListCollectionViewCell.swift */,
+				37698A7328CDE08300DBD4E5 /* CoinListCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		37698A7728CDE0DC00DBD4E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37698A4528CDD84000DBD4E5 /* ViewController.swift */,
+				37698A7828CDE10D00DBD4E5 /* AddingItemViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37698A7A28CDE14E00DBD4E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37698A7B28CDE15F00DBD4E5 /* Element.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +270,7 @@
 				37698A4E28CDD84400DBD4E5 /* LaunchScreen.storyboard in Resources */,
 				37698A4B28CDD84400DBD4E5 /* Assets.xcassets in Resources */,
 				37698A4928CDD84000DBD4E5 /* Main.storyboard in Resources */,
+				37698A7528CDE08300DBD4E5 /* CoinListCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +297,9 @@
 			files = (
 				37698A4628CDD84000DBD4E5 /* ViewController.swift in Sources */,
 				37698A4228CDD84000DBD4E5 /* AppDelegate.swift in Sources */,
+				37698A7C28CDE15F00DBD4E5 /* Element.swift in Sources */,
+				37698A7428CDE08300DBD4E5 /* CoinListCollectionViewCell.swift in Sources */,
+				37698A7928CDE10D00DBD4E5 /* AddingItemViewController.swift in Sources */,
 				37698A4428CDD84000DBD4E5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
